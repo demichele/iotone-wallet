@@ -1,0 +1,51 @@
+{
+  "name": "iot1-wallet",
+  "description": "IOTA CLI Wallet",
+  "version": "0.0.0",
+  "author": "iot1 @demichele",
+  "bin": {
+    "iot1-wallet": "./bin/run"
+  },
+  "bugs": "https://github.com/demichele/iot1-wallet/issues",
+  "dependencies": {
+    "@iota/core": "^1.0.0-beta.30",
+    "@iota/iota-rs-wasm": "^1.0.0-alpha.4",
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "globby": "^10.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/demichele/iot1-wallet",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "iota-wallet",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "dewichele/iot1-wallet",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
