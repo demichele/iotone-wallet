@@ -1,12 +1,12 @@
 {
-  "name": "iot1-wallet",
+  "name": "iotone-wallet",
   "description": "IOTA CLI Wallet",
   "version": "0.0.0",
-  "author": "iot1 @demichele",
+  "author": "demichele @demichele",
   "bin": {
-    "iot1-wallet": "./bin/run"
+    "iotone-wallet": "./bin/run"
   },
-  "bugs": "https://github.com/demichele/iot1-wallet/issues",
+  "bugs": "https://github.com/demichele/iotone-wallet/issues",
   "dependencies": {
     "@iota/core": "^1.0.0-beta.30",
     "@iota/iota-rs-wasm": "^1.0.0-alpha.4",
@@ -28,7 +28,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://github.com/demichele/iot1-wallet",
+  "homepage": "https://github.com/demichele/iotone-wallet",
   "keywords": [
     "oclif"
   ],
@@ -41,7 +41,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "dewichele/iot1-wallet",
+  "repository": "demichele/iotone-wallet-wallet",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "oclif-dev manifest && oclif-dev readme",
